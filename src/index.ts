@@ -1,7 +1,7 @@
-import { Book } from './book';
-import { BueCallback, Reviews } from './types';
-import { Genre } from './constants';
-import { buy } from './helpers';
+import { Book } from './book.js';
+import { BueCallback, Reviews } from './types.js';
+import { Genre } from './constants.js';
+import { buy } from './helpers.js';
 
 const reviews: Reviews = [
   ['Jhon', 5, 'It is my favorite book'],
@@ -27,3 +27,5 @@ const callback: BueCallback = (error, transactionId) => {
 };
 
 buy(book, callback);
+
+console.log('test')

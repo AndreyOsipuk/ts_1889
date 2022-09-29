@@ -1,5 +1,5 @@
-import { Reviews, Author } from './types';
-import { Genre } from './constants';
+import { Reviews, Author } from './types.js';
+import { Genre } from './constants.js';
 
 interface BookValues {
   name: string;

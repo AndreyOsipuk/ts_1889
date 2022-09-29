@@ -1,5 +1,5 @@
-import { Book } from './book';
-import { BueCallback } from './types';
+import { Book } from './book.js';
+import { BueCallback } from './types.js';
 
 export function serialize(value: unknown) {
   if (value === null) {
@@ -46,7 +46,7 @@ export function markAsRead(...books: Book[]): void {
   // здесь будет какая-то лоигка
 }
 
-export function bueRequest(book: Book) {
+export function bueRequest(book: Book): Promise<string> {
   const transactionId = Math.round.toString();
   return Promise.resolve(transactionId);
 }

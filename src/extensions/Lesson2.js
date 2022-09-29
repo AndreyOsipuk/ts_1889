@@ -1,0 +1,23 @@
+"use strict";
+// В функцию приходит массив состояний заказа и фильтруется
+// Нужно заменить FIXME на тип который вычисляется на освове OrderState
+exports.__esModule = true;
+exports.getUserOrderStates = void 0;
+var orderStates = [
+    'initial',
+    'inWork',
+    'buyingSupplies',
+    'producing',
+    'fullfilled',
+];
+var getUserOrderStates = function (orderStates) {
+    var filteredStates = [];
+    orderStates.forEach(function (element) {
+        if (element !== 'buyingSupplies' && element !== 'producing') {
+            filteredStates.push(element);
+        }
+    });
+    return filteredStates;
+};
+exports.getUserOrderStates = getUserOrderStates;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiTGVzc29uMi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkxlc3NvbjIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLDJEQUEyRDtBQUMzRCx1RUFBdUU7OztBQUt2RSxJQUFNLFdBQVcsR0FBRztJQUNsQixTQUFTO0lBQ1QsUUFBUTtJQUNSLGdCQUFnQjtJQUNoQixXQUFXO0lBQ1gsWUFBWTtDQUNKLENBQUM7QUFJSixJQUFNLGtCQUFrQixHQUFHLFVBQUMsV0FBeUI7SUFDMUQsSUFBTSxjQUFjLEdBQUcsRUFBVyxDQUFDO0lBQ25DLFdBQVcsQ0FBQyxPQUFPLENBQUMsVUFBQyxPQUFPO1FBQzFCLElBQUksT0FBTyxLQUFLLGdCQUFnQixJQUFJLE9BQU8sS0FBSyxXQUFXLEVBQUU7WUFDM0QsY0FBYyxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQztTQUM5QjtJQUNILENBQUMsQ0FBQyxDQUFDO0lBQ0gsT0FBTyxjQUFjLENBQUM7QUFDeEIsQ0FBQyxDQUFDO0FBUlcsUUFBQSxrQkFBa0Isc0JBUTdCIiwic291cmNlc0NvbnRlbnQiOlsiLy8g0JIg0YTRg9C90LrRhtC40Y4g0L/RgNC40YXQvtC00LjRgiDQvNCw0YHRgdC40LIg0YHQvtGB0YLQvtGP0L3QuNC5INC30LDQutCw0LfQsCDQuCDRhNC40LvRjNGC0YDRg9C10YLRgdGPXG4vLyDQndGD0LbQvdC+INC30LDQvNC10L3QuNGC0YwgRklYTUUg0L3QsCDRgtC40L8g0LrQvtGC0L7RgNGL0Lkg0LLRi9GH0LjRgdC70Y/QtdGC0YHRjyDQvdCwINC+0YHQstC+0LLQtSBPcmRlclN0YXRlXG5cbi8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSBAdHlwZXNjcmlwdC1lc2xpbnQvbm8tZXhwbGljaXQtYW55XG50eXBlIEZJWE1FID0gYW55O1xuXG5jb25zdCBvcmRlclN0YXRlcyA9IFtcbiAgJ2luaXRpYWwnLFxuICAnaW5Xb3JrJyxcbiAgJ2J1eWluZ1N1cHBsaWVzJyxcbiAgJ3Byb2R1Y2luZycsXG4gICdmdWxsZmlsbGVkJyxcbl0gYXMgY29uc3Q7XG5cbnR5cGUgT3JkZXJTdGF0ZSA9IHR5cGVvZiBvcmRlclN0YXRlc1tudW1iZXJdO1xuXG5leHBvcnQgY29uc3QgZ2V0VXNlck9yZGVyU3RhdGVzID0gKG9yZGVyU3RhdGVzOiBPcmRlclN0YXRlW10pOiBGSVhNRSA9PiB7XG4gIGNvbnN0IGZpbHRlcmVkU3RhdGVzID0gW10gYXMgRklYTUU7XG4gIG9yZGVyU3RhdGVzLmZvckVhY2goKGVsZW1lbnQpID0+IHtcbiAgICBpZiAoZWxlbWVudCAhPT0gJ2J1eWluZ1N1cHBsaWVzJyAmJiBlbGVtZW50ICE9PSAncHJvZHVjaW5nJykge1xuICAgICAgZmlsdGVyZWRTdGF0ZXMucHVzaChlbGVtZW50KTtcbiAgICB9XG4gIH0pO1xuICByZXR1cm4gZmlsdGVyZWRTdGF0ZXM7XG59O1xuIl19
